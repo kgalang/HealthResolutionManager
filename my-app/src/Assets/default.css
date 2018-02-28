@@ -68,6 +68,25 @@ html, body{
     right: 2em;
 }
 
+.oauth-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.oauth-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.oauth-logos img {
+    width: 8%;
+    height: 8%;
+    margin: 1.5em;
+}
+
 .slider-box {
     height: 100%;
     width: 50%;

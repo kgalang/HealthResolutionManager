@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import OauthOptions from './OauthOptions';
+
 class SignUpForm extends Component {
     render() {
         return (
@@ -13,6 +15,7 @@ class SignUpForm extends Component {
                 <input type="text" placeholder="Email"/>
                 <input type="password" placeholder="Password"/>
                 <input className="btn"type="button" value="Submit"/>
+                <OauthOptions />
                 <Link to="/" className="link-to-log-in">Already have an account?</Link>
             </div>
         );
