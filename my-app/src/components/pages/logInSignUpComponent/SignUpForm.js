@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import OauthOptions from './OauthOptions';
-
-class LogInForm extends Component {
+class SignUpForm extends Component {
     render() {
         return (
             <div className="login-form">
                 <div>
                     {/* place logo here */}
-                    <h2><strong>Log in</strong></h2>
+                    <h2><strong>Sign Up</strong></h2>
                 </div>
+                <input type="text" placeholder="Name" />
                 <input type="text" placeholder="Email"/>
                 <input type="password" placeholder="Password"/>
                 <input className="btn"type="button" value="Submit"/>
-                <OauthOptions />
-
-                <Link to="/signup" className="link-to-sign-up">Don't have an account yet?</Link>
+                <Link to="/" className="link-to-log-in">Already have an account?</Link>
             </div>
         );
     }
 }
 
-export default LogInForm;
+export default SignUpForm;

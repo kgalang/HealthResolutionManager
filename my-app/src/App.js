@@ -14,8 +14,10 @@ class App extends Component {
     return (
       <div id="App">
         <Router>
+          <div className="full">
           <Route exact path="/" component={ LogIn } />
           <Route exact path="/signup" component={ SignUp } />
+          </div>
         </Router>
       </div>
     );
