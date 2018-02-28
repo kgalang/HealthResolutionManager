@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Assets/default.css';
 import {
 	BrowserRouter as Router,
-	Route,
+  Route
 } from 'react-router-dom';
 
 //components
@@ -15,8 +15,8 @@ class App extends Component {
       <div id="App">
         <Router>
           <div className="full">
-          <Route exact path="/" component={ LogIn } />
-          <Route exact path="/signup" component={ SignUp } />
+                <Route exact path="/" component={ LogIn } />
+                <Route exact path="/signup" component={ SignUp } />
           </div>
         </Router>
       </div>
