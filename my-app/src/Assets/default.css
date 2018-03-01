@@ -8,15 +8,18 @@ html, body{
   }
 
 #root, #App, .full {
-    background-image: url("https://cdn.svgporn.com/logos/cloudinary.svg");
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: 65%;
+    background-size: 60%;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
+}
+
+.background-image {
+    background-image: url("https://cdn.svgporn.com/logos/cloudinary.svg");
 }
 
 .login-page {
@@ -120,4 +123,39 @@ html, body{
 .page-background {
     background-color: rgba(212, 227, 252, 1);
 }
-  
+
+.nav-bar {
+    background-color: #021f54;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-icon {
+    width: 25%;
+    padding-left: 20px;
+}
+
+.dashboard-content-title {
+    position: fixed;
+    top: 64px;
+    width: 100%;
+    display: flex;
+    padding-left: 10%;
+    padding-top: 1em;
+}
