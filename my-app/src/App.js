@@ -8,6 +8,7 @@ import {
 //components
 import LogIn from './components/pages/logIn';
 import SignUp from './components/pages/signUp';
+import Dashboard from './components/pages/Dashboard';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
           <div className="full">
                 <Route exact path="/" component={ LogIn } />
                 <Route exact path="/signup" component={ SignUp } />
+                <Route exact path="/dashboard" component={ Dashboard } />
           </div>
         </Router>
       </div>
