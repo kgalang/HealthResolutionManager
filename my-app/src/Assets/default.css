@@ -151,11 +151,26 @@ html, body{
     padding-left: 20px;
 }
 
-.dashboard-content-title {
+.dashboard {
     position: fixed;
     top: 64px;
     width: 100%;
     display: flex;
-    padding-left: 10%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-section {
     padding-top: 1em;
+    width: 80%;
+}
+
+.dashboard-section h2 {
+    padding-left: 2.5%;
+}
+
+.dashboard-content {
+    background-color: white;
+    border-radius: 20px;
+    padding: 2.5%;
 }
