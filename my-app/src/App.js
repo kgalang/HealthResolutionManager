@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './Assets/default.css';
 import {
-	BrowserRouter as Router,
+	Router,
   Route
 } from 'react-router-dom';
+import history from "./history";
 
 //components
 import LogIn from './components/pages/logIn';
@@ -14,11 +15,11 @@ class App extends Component {
   render() {
     return (
       <div id="App">
-        <Router>
+        <Router history={history}>
           <div className="full">
                 <Route exact path="/" component={ LogIn } />
-                <Route exact path="/signup" component={ SignUp } />
-                <Route exact path="/dashboard" component={ Dashboard } />
+                <Route path="/signup" component={ SignUp } />
+                <Route path="/dashboard" component={ Dashboard } />
           </div>
         </Router>
       </div>
