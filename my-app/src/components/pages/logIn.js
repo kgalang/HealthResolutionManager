@@ -7,14 +7,14 @@ import LogInForm from './logInSignUpComponent/LogInForm';
 
 class LogIn extends Component {
     render() {
-        return this.props.loggedIn ? (
+        return !this.props.loggedIn ? (
             <div className="full background-image">
                 <Slider className="slider-box" />
                 <LogInForm className="login-form full" />
             </div>
         ) : (
             <div>
-                <h1>You're Logged Out</h1>
+                <h1>You're Logged In</h1>
             </div>
         )
     }
