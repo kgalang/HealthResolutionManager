@@ -8,7 +8,7 @@ export class RequestsSection extends Component {
   render() {
     return (
         <div className="dashboard-content">
-            <h5><strong>Number of Requests in Progress:</strong></h5>
+            <h5><strong>Number of Requests in Progress:  {this.props.yourHealthRequests.length}</strong></h5>
             {
                 this.props.yourHealthRequests
                 ? this.props.yourHealthRequests.map(healthRequest => (
