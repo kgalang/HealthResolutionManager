@@ -6,7 +6,7 @@ export default endpoint => {
       return sendData({
         errorRate: 0.05,
         waitTime: Math.random() * 2000,
-        numberOfHealthRequests: 3
+        numberOfHealthRequests: 5
       });
     default:
       return new Promise();

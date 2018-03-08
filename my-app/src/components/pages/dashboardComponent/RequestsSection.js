@@ -9,6 +9,7 @@ export class RequestsSection extends Component {
     return (
         <div className="dashboard-content">
             <h5><strong>Number of Requests in Progress:  {this.props.yourHealthRequests.length}</strong></h5>
+            <div className="scrollable">
             {
                 this.props.yourHealthRequests
                 ? this.props.yourHealthRequests.map(healthRequest => (
@@ -16,6 +17,7 @@ export class RequestsSection extends Component {
                   ))
                 : <RequestOverview category="Error" title="Didn't get data" />
             }
+            </div>
         </div>
     );
   }
