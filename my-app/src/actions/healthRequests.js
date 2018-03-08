@@ -18,3 +18,18 @@ export const receiveYourHealthRequests = (healthRequests) => {
     };
 };
 
+//Action Creators
+
+export const fetchYourHealthRequests = () => {
+    return function(dispatch) {
+        dispatch(requestYourHealthRequests());
+        return mockFetch("/api/yourHealthRequests")
+            .then(
+                results => {
+                    return results.json();
+                },
+                error => console.log("an error occurred...", error)
+            ).then(json => dispatch(receiveYourHealthRequests(json)));
+    };
+};
+

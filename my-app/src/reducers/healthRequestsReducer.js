@@ -1,4 +1,7 @@
 import { healthRequestTypes } from "../actions/types"
+const {
+    RECEIVE_YOUR_HEALTH_REQUESTS
+} = healthRequestTypes;
 
 const initialState = {
     yourHealthRequests: []

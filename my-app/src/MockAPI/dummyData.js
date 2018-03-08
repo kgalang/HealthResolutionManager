@@ -1,16 +1,13 @@
+import { range } from "lodash";
 import shortid from "shortid";
 
-export const dummyHealthRequests = amount => {
-    let healthRequests = [];
-    let i = 0;
-    while (i < amount) {
-        healthRequest = {
-            id: shortid.generate(),
-            category: "Appeal",
-            title: "Appeal Title",
-            status: "Submitted",
-        };
-        healthRequests.push(healthRequest);
-        i++;
-    }
-}
+export const dummyHealthRequests = n => {
+    return range(n).reduce((a, e, i) => {
+      return a.concat({
+                    id: shortid.generate(),
+                    category: "Appeal",
+                    title: "Appeal Title",
+                    status: "Submitted",
+                });
+    }, []);
+  };

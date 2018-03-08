@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from "react-redux";
 import NavBar from './dashboardComponent/NavBar'
-import RequestOverview from './dashboardComponent/RequestOverview';
+import RequestsSection from './dashboardComponent/RequestsSection';
+import { fetchYourHealthRequests } from '../../actions/healthRequests';
 
 class Dashboard extends Component {
     render() {
@@ -11,10 +13,10 @@ class Dashboard extends Component {
                 <div className="dashboard">
                     <div className="dashboard-section">
                         <h2><strong>Requests</strong></h2>
-                        <div className="dashboard-content">
-                            <h5><strong>Number of Requests in Progress:</strong></h5>
-                            <RequestOverview />
-                        </div>
+                        <RequestsSection 
+                            yourHealthRequests={this.props.yourHealthRequests}
+                            getData={this.props.fetchYourHealthRequests}
+                        />
                     </div>
                 </div>
             </div>
@@ -22,4 +24,13 @@ class Dashboard extends Component {
     }
 }
 
-export default Dashboard;
+export default connect(
+    state => {
+        return {
+            yourHealthRequests: state.healthRequests.yourHealthRequests
+        };
+    },
+    {
+        fetchYourHealthRequests: fetchYourHealthRequests
+    }
+)(Dashboard);

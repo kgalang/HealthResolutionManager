@@ -9,8 +9,8 @@ class RequestOverview extends Component {
         return (
             <div className="request-overview">
                 <div className="request-info">
-                    <p><strong>Request Category - Request Title</strong></p>
-                    <p><em>Current Status</em></p>
+                    <p><strong>{this.props.category} - {this.props.title}</strong></p>
+                    <p><em>{this.props.status}</em></p>
                     <div className="request-links">
                         <p>Details | Edit | Cancel</p>
                     </div>
