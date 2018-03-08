@@ -175,7 +175,12 @@ html, body{
     background-color: white;
     border-radius: 20px;
     padding: 2.5%;
+    position: fixed;
+    height: 70%;
+    width: 80%;
+    overflow: scroll;
 }
+
 
 .dashboard-content h5 {
     padding-bottom: 2%;
@@ -187,6 +192,15 @@ html, body{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000000;
+    margin: 1em 0;
+    padding: 0;
 }
 
 .request-info {
