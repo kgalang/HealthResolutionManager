@@ -7,6 +7,8 @@ let progressBarValue = {
 class RequestOverview extends Component {
     render() {
         return (
+            <div>
+            <hr />
             <div className="request-overview">
                 <div className="request-info">
                     <p><strong>{this.props.category} - {this.props.title}</strong></p>
@@ -26,6 +28,7 @@ class RequestOverview extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         );
     }
