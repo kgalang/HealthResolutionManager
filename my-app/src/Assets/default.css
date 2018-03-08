@@ -1,0 +1,224 @@
+
+html, body{
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+#root, #App, .full {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 60%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.background-image {
+    background-image: url("https://cdn.svgporn.com/logos/cloudinary.svg");
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background: white;
+}
+
+.login-form div h2 {
+    padding-bottom: .7em;
+}
+
+.login-form input {
+    padding-bottom: 2em;
+    margin: 0;
+    text-align: center;
+}
+
+.login-form textarea, .login-form input[type=text], .login-form input[type=password] { 
+    outline: none;
+    border: none;
+}
+
+.login-form input[type=button] {
+    outline: none;
+    border: none;
+    background-color: #1464f6;
+    color: white;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.link-to-log-in {
+    position: fixed;
+    bottom: 2em;
+    left: 2em;
+}
+
+.link-to-sign-up {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+}
+
+.oauth-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.oauth-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.oauth-logos img {
+    width: 8%;
+    height: 8%;
+    margin: 1.5em;
+}
+
+.slider-box {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 49, 172, 0.85);
+    color: white;
+}
+
+.slider-box h2 {
+    padding: .2em;
+}
+
+.slider-box ul {
+    padding: 0;
+}
+
+.slider-box ul li {
+    list-style-type: none;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.page-background {
+    background-color: rgba(212, 227, 252, 1);
+}
+
+.nav-bar {
+    background-color: #021f54;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-icon {
+    width: 25%;
+    padding-left: 20px;
+}
+
+.dashboard {
+    position: fixed;
+    top: 64px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-section {
+    padding-top: 1em;
+    width: 80%;
+}
+
+.dashboard-section h2 {
+    padding-left: 2.5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.dashboard-content {
+    background-color: white;
+    border-radius: 20px;
+    padding: 2.5%;
+}
+
+.dashboard-content h5 {
+    padding-bottom: 2%;
+}
+
+.request-overview {
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.request-info {
+    height: 100%;
+}
+
+.request-progress-bar {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width:100%;
+    padding: 0;
+    margin: 1%;
+}
+
+.progress-label {
+    margin: 0;
+}
+.progress {
+    width: 90%;
+    height: 3em;
+}
+
+.progress-bar {
+    height: 3em;
+}
